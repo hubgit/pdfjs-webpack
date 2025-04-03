@@ -4,4 +4,12 @@ export default {
     filename: 'bundle.js',
   },
   mode: 'development',
+  module: {
+    parser: {
+      javascript: {
+        importMeta: false,
+        url: false,
+      },
+    },
+  },
 }
